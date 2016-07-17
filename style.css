@@ -1776,3 +1776,11 @@ img#wpstats {
 		margin-left: 3.57142857rem;
 	}
 }
+
+.page-template-squeeze nav {
+  display: none;
+}
+
+.drip-tab-container {
+  display: none;
+}
