@@ -52,6 +52,8 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 /* =Reset
 -------------------------------------------------------------- */
 
+@import url(http://fonts.googleapis.com/css?family=Source+Serif+Pro);
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -185,8 +187,6 @@ img {
 .widget-title,
 .entry-content th,
 .comment-content th {
-	font-size: 11px;
-	font-size: 0.785714286rem;
 	line-height: 2.181818182;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -484,14 +484,12 @@ html {
 	font-size: 87.5%;
 }
 body {
-	font-size: 14px;
-	font-size: 1rem;
-	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	color: #444;
 }
 body.custom-font-enabled {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Source Serif Pro';
 }
 a {
 	outline: none;
@@ -565,16 +563,11 @@ a:hover {
 	color: #21759b;
 }
 .site-header h1 {
-	font-size: 24px;
-	font-size: 1.714285714rem;
-	line-height: 1.285714286;
 	margin-bottom: 14px;
 	margin-bottom: 1rem;
 }
 .site-header h2 {
 	font-weight: normal;
-	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
 }
@@ -703,9 +696,8 @@ footer[role="contentinfo"] a:hover {
 	margin-bottom: 1.714285714rem;
 }
 .entry-header .entry-title {
-	font-size: 20px;
-	font-size: 1.428571429rem;
-	line-height: 1.2;
+	font-size: 36px;
+  line-height: 40px;
 	font-weight: normal;
 }
 .entry-header .entry-title a {
@@ -1487,8 +1479,8 @@ img#wpstats {
 		overflow: hidden;
 	}
 	.site-content {
-		float: left;
-		width: 65.104166667%;
+    width: 65.104166667%;
+    float: left;
 	}
 	body.template-front-page .site-content,
 	body.attachment .site-content,
@@ -1595,8 +1587,6 @@ img#wpstats {
 		display: none;
 	}
 	.entry-header .entry-title {
-		font-size: 22px;
-		font-size: 1.571428571rem;
 	}
 	#respond form input[type="text"] {
 		width: 46.333333333%;
@@ -1746,7 +1736,6 @@ img#wpstats {
 
 	.entry-header .entry-title,
 	.entry-title {
-		font-size: 21pt;
 	}
 	footer.entry-meta,
 	footer.entry-meta a {
@@ -1777,10 +1766,41 @@ img#wpstats {
 	}
 }
 
+.page-template-squeeze .drip-tab-container {
+  display: none;
+}
+
 .page-template-squeeze nav {
   display: none;
 }
 
-.drip-tab-container {
+.page-template-squeeze .site-title {
   display: none;
+}
+
+.page-template-squeeze .entry-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page-template-squeeze .site-content {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans';
+  font-weight: bold !important;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.site-title {
+  font-size: 16px !important;
 }
